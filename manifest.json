@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Bitcoin Price Alert",
+  "version": "1.1",
+  "description": "Alerts you every 30 minutes and shows BTC price from Coinbase when clicked.",
+  "permissions": ["notifications", "alarms"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "icons": {
+    "128": "icon.png"
+  }
+}
+
