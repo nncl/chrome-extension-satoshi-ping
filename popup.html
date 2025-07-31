@@ -1,26 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
   <title>BTC Price</title>
   <style>
     body {
       font-family: sans-serif;
-      width: 200px;
-      padding: 15px;
-      text-align: center;
+      padding: 10px;
+      width: 230px;
+    }
+    input {
+      width: 60px;
+      margin-right: 10px;
+    }
+    #status {
+      margin-top: 5px;
+      font-size: 12px;
+      color: green;
     }
     #price {
-      font-size: 20px;
       margin-top: 10px;
-      color: #f7931a;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
-  <h2>BTC (Coinbase)</h2>
-  <div id="price">Loading...</div>
+  <h3>BTC Price Alerts</h3>
+  <label for="interval">Interval (min):</label><br />
+  <input type="number" id="interval" min="1" value="60" />
+  <button id="saveInterval">Save</button>
+  <p id="status"></p>
+  <div id="price">Loading price...</div>
   <script src="popup.js"></script>
 </body>
 </html>
-
